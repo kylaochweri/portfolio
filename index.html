@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MY RESUME</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>KYLA NYABOKE</h1>
+      <p> I am a dedicated third-year Software Engineering student with a strong foundation in programming, web development, and software design principles. Passionate about building scalable and user-focused applications, I have gained hands-on experience through academic projects and internships. I thrive in collaborative environments, enjoy problem-solving, and am constantly seeking opportunities to learn new technologies. Currently getting to know more on areas such as full-stack development, cloud computing, and machine learning to broaden my skills and prepare for a successful career in tech.</p>
+    </section>
+
+    <section id="skills">
+      <h2>SKILLS</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>EXPERIENCE</h2>
+      <article>
+        <h3>Software development intern</h3>
+        <p>June 2024 – December 2024</p>
+        <p>Assisted in developing and debugging features for a web-based inventory management system using JavaScript, HTML/CSS, and Node.js.Collaborated with a team of 4 developers using Git for version control.Participated in daily stand-ups and client demo sessions, gaining real-world communication and teamwork experience
+</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>CONTACT</h2>
+      <form id="contactForm" onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kyla Ochweri.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
